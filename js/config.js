@@ -69,12 +69,12 @@ const SITE_CONFIG = {
   // metadata) — paste the firebaseConfig object Firebase gives you
   // when you register a web app. No credit card needed for this part.
   firebaseConfig: {
-    apiKey: "PASTE_YOUR_FIREBASE_API_KEY_HERE",
-    authDomain: "your-project.firebaseapp.com",
-    projectId: "your-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "000000000000",
-    appId: "1:000000000000:web:xxxxxxxxxxxxxxxxxxxxxx"
+    apiKey: "AIzaSyDCziwcR1xTrOeU2kieGIYbPvxuuAudkro",
+    authDomain: "the-east-bay-project-roleplay.firebaseapp.com",
+    projectId: "the-east-bay-project-roleplay",
+    storageBucket: "the-east-bay-project-roleplay.firebasestorage.app",
+    messagingSenderId: "111213832731",
+    appId: "1:111213832731:web:d92ca08b154127054e26be",
   },
 
   // Cloudinary (for the actual photo files — no credit card needed)
