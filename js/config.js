@@ -62,7 +62,7 @@ const SITE_CONFIG = {
   discordInviteUrl: "https://discord.gg/your-invite-code",
 
   // Discord OAuth (for "Log in with Discord")
-  discordClientId: "PASTE_YOUR_DISCORD_CLIENT_ID_HERE",
+  discordClientId: "1518715513302417488",
   discordRedirectUri: "https://yourusername.github.io/your-repo-name/",
 
   // Firebase Firestore only (for recording member accounts + photo
