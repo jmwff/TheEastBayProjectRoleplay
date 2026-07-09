@@ -27,7 +27,7 @@
   =====================================================================
 */
 
-const DISCORD_TOKEN_KEY = 'wrp_discord_token';
+const DISCORD_TOKEN_KEY = 'MTUxODcxNTUxMzMwMjQxNzQ4OA.G4__kR.lx3TZPCiWUZodnjJhiIct0yBQsvXmsw2beiqAs';
 
 function getStoredToken() {
   try {
