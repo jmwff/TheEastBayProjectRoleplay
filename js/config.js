@@ -63,7 +63,7 @@ const SITE_CONFIG = {
 
   // Discord OAuth (for "Log in with Discord")
   discordClientId: "1518715513302417488",
-  discordRedirectUri: "https://yourusername.github.io/your-repo-name/",
+  discordRedirectUri: "https://jmwff.github.io/TheEastBayProjectRoleplay/",
 
   // Firebase Firestore only (for recording member accounts + photo
   // metadata) — paste the firebaseConfig object Firebase gives you
