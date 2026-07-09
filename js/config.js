@@ -79,8 +79,8 @@ const SITE_CONFIG = {
 
   // Cloudinary (for the actual photo files — no credit card needed)
   cloudinary: {
-    cloudName: "PASTE_YOUR_CLOUDINARY_CLOUD_NAME_HERE",
-    uploadPreset: "PASTE_YOUR_UNSIGNED_UPLOAD_PRESET_NAME_HERE"
+    cloudName: "wh1jy8ao",
+    uploadPreset: "ebrpwebsite"
   },
 
   defaultWebhookUrl: "PASTE_YOUR_DISCORD_WEBHOOK_URL_HERE",
