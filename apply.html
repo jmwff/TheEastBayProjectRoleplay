@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Application · The East Bay Project Roleplay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="crest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></span>
+      <span class="brand-word">The East Bay Project Roleplay</span>
+    </a>
+    <ul class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="forums.html">Forums</a></li>
+      <li class="current"><a href="applications.html">Open Applications</a></li>
+      <li>
+        <button class="nav-toggle">Departments <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="applications.html?dept=leo">Municipal Police</a>
+          <a href="applications.html?dept=leo">San Andreas State Police</a>
+          <a href="applications.html?dept=civilian">Civilian Operations</a>
+          <a href="applications.html?dept=standard">San Andreas 911</a>
+          <a href="applications.html?dept=standard">Municipal Fire &amp; EMS</a>
+        </div>
+      </li>
+      <li>
+        <button class="nav-toggle">Resources <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="staff.html">Staff</a>
+          <a href="rules.html">Rules &amp; Regulations</a>
+          <a href="requirements.html">Community Requirements</a>
+          <a href="requirements.html#recruitment">Recruitment Cycle</a>
+          <a href="#" data-discord-link target="_blank" rel="noopener">Discord Fan Server</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="userbar">
+  <div class="userbar-inner">
+    <div class="userbar-left" id="authArea">
+      <div class="user-chip"><span class="av">?</span> Guest</div>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search…">
+    </div>
+  </div>
+</div>
+
+<div class="crumbbar">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; <a href="applications.html">Applications</a> &rsaquo; Submit</span>
+  </div>
+</div>
+
+<div class="page-photo">
+  <div class="wrap" style="max-width:1180px;">
+
+    <div class="panel">
+      <div class="panel-header">Submit an Application</div>
+      <div class="apply-form-layout">
+        <div class="apply-picker" id="applyPicker">
+          <button class="apply-opt" data-dept="civilian"><span class="dot"></span><span><span class="t">Civilian Recruit</span><span class="s">Start a new life</span></span></button>
+          <button class="apply-opt" data-dept="standard"><span class="dot"></span><span><span class="t">Standard Recruit</span><span class="s">Fire/EMT &amp; Dispatch</span></span></button>
+          <button class="apply-opt" data-dept="leo"><span class="dot"></span><span><span class="t">Law Enforcement</span><span class="s">Currently opened</span></span></button>
+          <button class="apply-opt" data-dept="developer"><span class="dot"></span><span><span class="t">Developer</span><span class="s">EUP, vehicles, scripts</span></span></button>
+          <button class="apply-opt" data-dept="media"><span class="dot"></span><span><span class="t">Media</span><span class="s">YouTube &amp; Twitch</span></span></button>
+        </div>
+
+        <form class="apply-form-body" id="applyForm">
+          <h3 id="formTitle">Application</h3>
+          <p class="form-sub" id="formSub"></p>
+
+          <div class="form-row">
+            <div class="field"><label for="fName">Character name</label><input id="fName" type="text" placeholder="First Last" required></div>
+            <div class="field"><label for="fDiscord">Discord username</label><input id="fDiscord" type="text" placeholder="username" required></div>
+          </div>
+
+          <div class="form-row">
+            <div class="field"><label for="fAge">Age</label><input id="fAge" type="number" min="16" placeholder="18" required></div>
+            <div class="field"><label for="fHours">Hours on server</label><input id="fHours" type="number" min="0" placeholder="0" required></div>
+          </div>
+
+          <div class="form-row single">
+            <div class="field">
+              <label for="fPosition">Position applying for</label>
+              <select id="fPosition"></select>
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="field">
+              <label for="fWhy" id="whyLabel">Why this department?</label>
+              <textarea id="fWhy" placeholder="Give us specifics." required></textarea>
+              <div class="field-hint">Minimum 100 characters. Copy-pasted generic answers are auto-rejected.</div>
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="field">
+              <label for="fScenario" id="scenarioLabel">Scenario response</label>
+              <textarea id="fScenario" placeholder="We'll drop a role-specific scenario here based on your pick." required></textarea>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn-submit">Submit Application</button>
+            <span class="form-note">You'll hear back over Discord DM.</span>
+          </div>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="crumbbar bottom">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; <a href="applications.html">Applications</a> &rsaquo; Submit</span>
+  </div>
+</div>
+<div class="sitefooter">
+  <div class="sitefooter-inner">
+    <span>Theme by The East Bay Project · <a href="#">Contact Us</a></span>
+    <span>&copy; 2026 The East Bay Project Roleplay. Not affiliated with Rockstar Games or Take-Two Interactive.</span>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script type="module" src="js/account-sync.js"></script>
+<script src="js/apply.js"></script>
+</body>
+</html>

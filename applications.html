@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Applications · The East Bay Project Roleplay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="crest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></span>
+      <span class="brand-word">The East Bay Project Roleplay</span>
+    </a>
+    <ul class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="forums.html">Forums</a></li>
+      <li class="current"><a href="applications.html">Open Applications</a></li>
+      <li>
+        <button class="nav-toggle">Departments <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="applications.html?dept=leo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg> Municipal Police</a>
+          <a href="applications.html?dept=leo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M6 20V10l6-6 6 6v10"/></svg> San Andreas State Police</a>
+          <a href="applications.html?dept=civilian"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Civilian Operations</a>
+          <a href="applications.html?dept=standard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> San Andreas 911</a>
+          <a href="applications.html?dept=standard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c0 4-3 7-7 7s-7-3-7-7 3-9 7-9 7 5 7 9z"/></svg> Municipal Fire &amp; EMS</a>
+        </div>
+      </li>
+      <li>
+        <button class="nav-toggle">Resources <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="staff.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Staff</a>
+          <a href="rules.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg> Rules &amp; Regulations</a>
+          <a href="requirements.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg> Community Requirements</a>
+          <a href="requirements.html#recruitment"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v16M4 4h13l-3 4 3 4H4"/></svg> Recruitment Cycle</a>
+          <a href="#" data-discord-link target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M16 12h.01M7 7l-2 5v7l3-2h8l3 2v-7l-2-5"/></svg> Discord Fan Server</a>
+          <a href="gallery.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Gallery</a>
+        </div>
+      </li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="userbar">
+  <div class="userbar-inner">
+    <div class="userbar-left" id="authArea">
+      <div class="user-chip"><span class="av">?</span> Guest</div>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search…">
+    </div>
+  </div>
+</div>
+
+<div class="crumbbar">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; Applications</span>
+    <div class="crumbbar-right">
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Unread Content</a>
+    </div>
+  </div>
+</div>
+
+<div class="page-photo">
+  <div class="wrap" style="max-width:1180px;">
+
+    <div class="panel apply-intro">
+      <p>Are you an applicant wishing to apply but can't see any open applications? That's because you need to create an account on our website first. Once you've signed up you will have a plethora of recruit applications to choose from below! 👇</p>
+      <p>Still confused? Join our public <a href="#" data-discord-link target="_blank" rel="noopener">Discord</a> for assistance.</p>
+      <p class="glow">We look forward to seeing you submit your application!</p>
+      <small>If you can see the applications, you may ignore this message.</small>
+    </div>
+
+    <div class="panel" style="margin-top:20px;">
+      <div class="panel-header">Open Applications</div>
+      <div class="panel-body tight">
+
+        <div class="app-row" style="--app-color:#F472B6">
+          <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+          <div class="app-main">
+            <h3>Civilian Recruit Application</h3>
+            <p>Looking to join in on becoming a Civilian at The East Bay Project and start a new life? Click here for the entry application! 👉</p>
+            <div class="returning">Are you a returning member to The East Bay Project? <a href="#">CLICK ME!</a></div>
+          </div>
+          <a href="apply.html?dept=civilian" class="app-cta">Apply</a>
+        </div>
+
+        <div class="app-row" style="--app-color:#E5484D">
+          <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
+          <div class="app-main">
+            <h3>Standard Recruit Application</h3>
+            <p>Looking to join in on becoming a Firefighter/EMT, or Dispatcher at The East Bay Project? Click here for the entry application! 👉</p>
+            <div class="returning">Are you a returning member to The East Bay Project? <a href="#">CLICK ME!</a></div>
+          </div>
+          <a href="apply.html?dept=standard" class="app-cta">Apply</a>
+        </div>
+
+        <div class="app-row" style="--app-color:#3B82F6">
+          <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></div>
+          <div class="app-main">
+            <h3>Law Enforcement Officer Recruit Application</h3>
+            <p><span class="status-open">Law Enforcement Applications are currently OPENED!</span></p>
+            <p>Looking to join in on becoming a law enforcement officer at The East Bay Project? Click here for the entry application! 👉</p>
+            <div class="returning">Are you a returning member to The East Bay Project? <a href="#">CLICK ME!</a></div>
+          </div>
+          <a href="apply.html?dept=leo" class="app-cta">Apply</a>
+        </div>
+
+        <div class="app-row" style="--app-color:#A78BFA">
+          <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.36.13.7.34 1 .6"/></svg></div>
+          <div class="app-main">
+            <h3>Developer Application</h3>
+            <p>Interested in developing for The East Bay Project? Click here for the entry application! 👉</p>
+            <p>If you're proficient in creating EUP textures/models, designs, livery designs, vehicles, siren diagrams or scripts and want to put your talents to continuing to improve one of the best FiveM servers than come join us!</p>
+          </div>
+          <a href="apply.html?dept=developer" class="app-cta">Apply</a>
+        </div>
+
+        <div class="app-row" style="--app-color:#F0A830">
+          <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <div class="app-main">
+            <h3>Media Application</h3>
+            <p>Want to grow your audience online with The East Bay Project? We'd be happy to open that door for you. Submit an application for the media department!</p>
+            <div class="returning">Read before applying: <a href="rules.html#media-sop">Media SOP</a></div>
+          </div>
+          <a href="apply.html?dept=media" class="app-cta">Apply</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="crumbbar bottom">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; Applications</span>
+    <div class="crumbbar-right">
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Unread Content</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Mark site read</a>
+    </div>
+  </div>
+</div>
+<div class="sitefooter">
+  <div class="sitefooter-inner">
+    <span>Theme by The East Bay Project · <a href="#">Contact Us</a></span>
+    <span>&copy; 2026 The East Bay Project Roleplay. Not affiliated with Rockstar Games or Take-Two Interactive.</span>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script type="module" src="js/account-sync.js"></script>
+</body>
+</html>

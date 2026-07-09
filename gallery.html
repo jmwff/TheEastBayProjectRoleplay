@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery · The East Bay Project Roleplay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="crest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></span>
+      <span class="brand-word">The East Bay Project Roleplay</span>
+    </a>
+    <ul class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="forums.html">Forums</a></li>
+      <li><a href="applications.html">Open Applications</a></li>
+      <li>
+        <button class="nav-toggle">Departments <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="applications.html?dept=leo">Municipal Police</a>
+          <a href="applications.html?dept=leo">San Andreas State Police</a>
+          <a href="applications.html?dept=civilian">Civilian Operations</a>
+          <a href="applications.html?dept=standard">San Andreas 911</a>
+          <a href="applications.html?dept=standard">Municipal Fire &amp; EMS</a>
+        </div>
+      </li>
+      <li class="current">
+        <button class="nav-toggle">Resources <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="staff.html">Staff</a>
+          <a href="rules.html">Rules &amp; Regulations</a>
+          <a href="requirements.html">Community Requirements</a>
+          <a href="requirements.html#recruitment">Recruitment Cycle</a>
+          <a href="#" data-discord-link target="_blank" rel="noopener">Discord Fan Server</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="userbar">
+  <div class="userbar-inner">
+    <div class="userbar-left" id="authArea">
+      <div class="user-chip"><span class="av">?</span> Guest</div>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search…">
+    </div>
+  </div>
+</div>
+
+<div class="crumbbar">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; Gallery</span>
+  </div>
+</div>
+
+<div class="page-photo">
+  <div class="wrap" style="max-width:1180px;">
+
+    <div class="panel">
+      <div class="panel-header">Upload a Photo</div>
+      <div class="panel-body">
+        <div id="uploadLoggedOut" style="text-align:center; color:var(--text-dim); font-size:14px;">
+          <a href="#" id="galleryLoginLink" class="inline-link">Log in with Discord</a> to upload photos to the gallery.
+        </div>
+        <form id="uploadForm" style="display:none;">
+          <div class="form-row single">
+            <div class="field">
+              <label for="fPhoto">Choose an image</label>
+              <input id="fPhoto" type="file" accept="image/*" required>
+              <div class="field-hint">Max 8MB. Uploads are tied to your Discord account.</div>
+            </div>
+          </div>
+          <div class="form-row single">
+            <div class="field">
+              <label for="fCaption">Caption (optional)</label>
+              <input id="fCaption" type="text" placeholder="e.g. Night shift, Vinewood Ave">
+            </div>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn-submit" id="uploadBtn">Upload Photo</button>
+          </div>
+          <div class="form-status" id="uploadStatus"></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:20px;">
+      <div class="panel-header">Gallery</div>
+      <div class="panel-body">
+        <div class="gallery-strip" id="galleryGrid">
+          <div class="empty-note">Loading photos…</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="crumbbar bottom">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a> &rsaquo; Gallery</span>
+  </div>
+</div>
+<div class="sitefooter">
+  <div class="sitefooter-inner">
+    <span>Theme by The East Bay Project · <a href="#">Contact Us</a></span>
+    <span>&copy; 2026 The East Bay Project Roleplay. Not affiliated with Rockstar Games or Take-Two Interactive.</span>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script type="module" src="js/account-sync.js"></script>
+<script type="module" src="js/gallery.js"></script>
+</body>
+</html>

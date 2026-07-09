@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The East Bay Project Roleplay</title>
+<meta name="description" content="The East Bay Project Roleplay — a FiveM community. Departments, forums, and open applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ TOP NAV ============ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="crest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg></span>
+      <span class="brand-word">The East Bay Project Roleplay</span>
+    </a>
+    <ul class="main-nav" id="mainNav">
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="forums.html">Forums</a></li>
+      <li><a href="applications.html">Open Applications</a></li>
+      <li>
+        <button class="nav-toggle">Departments <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="applications.html?dept=leo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg> Municipal Police</a>
+          <a href="applications.html?dept=leo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M6 20V10l6-6 6 6v10"/></svg> San Andreas State Police</a>
+          <a href="applications.html?dept=civilian"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Civilian Operations</a>
+          <a href="applications.html?dept=standard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> San Andreas 911</a>
+          <a href="applications.html?dept=standard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c0 4-3 7-7 7s-7-3-7-7 3-9 7-9 7 5 7 9z"/></svg> Municipal Fire &amp; EMS</a>
+        </div>
+      </li>
+      <li>
+        <button class="nav-toggle">Resources <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega">
+          <a href="staff.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Staff</a>
+          <a href="rules.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg> Rules &amp; Regulations</a>
+          <a href="requirements.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg> Community Requirements</a>
+          <a href="requirements.html#recruitment"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v16M4 4h13l-3 4 3 4H4"/></svg> Recruitment Cycle</a>
+          <a href="#" data-discord-link target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M16 12h.01M7 7l-2 5v7l3-2h8l3 2v-7l-2-5"/></svg> Discord Fan Server</a>
+          <a href="gallery.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Gallery</a>
+        </div>
+      </li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ============ USER BAR ============ -->
+<div class="userbar">
+  <div class="userbar-inner">
+    <div class="userbar-left" id="authArea">
+      <div class="user-chip"><span class="av">?</span> Guest</div>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search…">
+    </div>
+  </div>
+</div>
+
+<!-- ============ BREADCRUMB ============ -->
+<div class="crumbbar">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a></span>
+    <div class="crumbbar-right">
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Unread Content</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<div class="page-photo">
+  <div class="page-layout">
+
+    <div class="main-col">
+      <div class="panel">
+        <div class="panel-body">
+
+          <div class="content-block">
+            <h2>Welcome to The East Bay Project Roleplay!</h2>
+            <p>The East Bay Project is a FiveM community founded with a mission to provide a unique roleplaying experience in a family environment. Our goal is to provide you with a supportive and loyal community where your voice will be heard and your efforts appreciated. With numerous departments and subdivisions to choose from, with top-notch assets and scripts, we aim to offer a truly one-of-a-kind roleplaying experience. We believe that these aspects are what sets us apart and contributes to our thriving community, where long-lasting bonds are formed and every member is respected and cared for by the administration, staff, and peers. We're always here to help you make the most of your experience at The East Bay Project, and we can't wait to welcome you into our family.</p>
+          </div>
+
+          <div class="content-block">
+            <h2>Want to join The East Bay Project Roleplay?</h2>
+            <p>Great! We'd love to have you here. We have plenty of departments for you to join. At the top of the website you will see <span class="highlight">"Open Applications"</span> make sure you click on that then select <span class="highlight">"Recruit Application"</span> that will redirect you to our server application. Please read all of The East Bay Project's rules and regulations and community requirements before applying, thanks!</p>
+            <p>Don't have a PC but still want to be a part of The East Bay Project, the Communications Department is the place for you! The San Andreas Communications Department allows individuals who don't have a strong enough PC to join us in-game still to patrol and make a difference in the community. They're absolutely crucial too! Communications provides the highest level of organization for patrol channels. Here at The East Bay Project, nobody is excluded. We want to join our community! If you have any questions at all, you can join our Fan Discord under "Resources" tab, or review the FAQ under "Resources" tab as well.</p>
+          </div>
+
+          <div class="content-block">
+            <h2>Have a question but unsure where to ask it?</h2>
+            <p>No worries! We have a public Discord which you can join by clicking the red text right <a href="#" class="inline-link" data-discord-link target="_blank" rel="noopener" style="color:#e5484d; font-weight:700;">HERE</a> and inside the Discord we have multiple support channels and a ticket system with staff ready to assist you! We can answer any and all of your questions you might have about the server, and you can find out more about The East Bay Project in this Discord!</p>
+          </div>
+
+          <div class="content-block">
+            <h2>Community Age Requirement</h2>
+            <p>The East Bay Project is determined to provide an entertaining, respectful, and mature environment for all of our members. To ensure that those goals are met, we have set our community age limit to <span class="highlight">16 years or older</span>.</p>
+            <p><a href="requirements.html" class="inline-link">Community Requirements</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">Images</div>
+        <div class="panel-body">
+          <div class="gallery-strip">
+            <div class="gallery-item">
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+              <div class="gallery-caption"><span class="title">Medflight</span><span class="by">By <a href="#">Jon H.</a> · June 21</span></div>
+            </div>
+            <div class="gallery-item">
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+              <div class="gallery-caption"><span class="title">Patrol Unit 12</span><span class="by">By <a href="#">Michael R.</a> · June 16</span></div>
+            </div>
+            <div class="gallery-item">
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+              <div class="gallery-caption"><span class="title">Highway Patrol</span><span class="by">By <a href="#">Bijah C.</a> · June 12</span></div>
+            </div>
+            <div class="gallery-item">
+              <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+              <div class="gallery-caption"><span class="title">Night Shift</span><span class="by">By <a href="#">Bijah C.</a> · June 10</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col">
+
+      <div class="panel">
+        <div class="panel-header">Member Statistics</div>
+        <div class="stat-row"><span class="label">Total Members</span><span class="value" id="statTotalMembers">Loading…</span></div>
+        <div class="newest-member" id="statNewestMember">
+          <span class="tag">Newest Member</span><br>Loading…
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<div class="crumbbar bottom">
+  <div class="crumbbar-inner">
+    <span><a href="index.html">Home</a></span>
+    <div class="crumbbar-right">
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Unread Content</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Mark site read</a>
+    </div>
+  </div>
+</div>
+<div class="sitefooter">
+  <div class="sitefooter-inner">
+    <span>Theme by The East Bay Project · <a href="#">Contact Us</a></span>
+    <span>&copy; 2026 The East Bay Project Roleplay. Not affiliated with Rockstar Games or Take-Two Interactive.</span>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script type="module" src="js/account-sync.js"></script>
+</body>
+</html>
